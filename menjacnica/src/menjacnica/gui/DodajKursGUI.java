@@ -1,8 +1,5 @@
 package menjacnica.gui;
 
-import java.awt.BorderLayout;
-import java.awt.EventQueue;
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
@@ -19,14 +16,16 @@ import javax.swing.SpinnerNumberModel;
 
 import menjacnica.gui.kontroler.GUIKontroler;
 
-import menjacnica.Valuta;
-
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Toolkit;
 
 public class DodajKursGUI extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 2613405213321060061L;
 	private JPanel contentPane;
 	private JLabel lblSifra;
 	private JLabel lblNaziv;

@@ -1,7 +1,5 @@
 package menjacnica.gui;
 
-import java.awt.BorderLayout;
-import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -25,6 +23,10 @@ import java.awt.Toolkit;
 
 public class ObrisiKursGUI extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 3908749570666279708L;
 	private JPanel contentPane;
 	private JLabel lblSifra;
 	private JLabel lblNaziv;
