@@ -185,12 +185,11 @@ public class DodajKursGUI extends JFrame {
 	private void unesiKurs() {
 		try {
 			GUIKontroler.unesiKurs(textFieldNaziv.getText(), textFieldSkraceniNaziv.getText(), (Integer)(spinnerSifra.getValue()), Double.parseDouble(textFieldProdajniKurs.getText()), Double.parseDouble(textFieldKupovniKurs.getText()), Double.parseDouble(textFieldSrednjiKurs.getText()));
-			GUIKontroler.prikaziSveValute();
 			
+			GUIKontroler.prikaziSveValute();			
 			dispose();
 		} catch (Exception e1) {
-			JOptionPane.showMessageDialog(contentPane, e1.getMessage(),
-					"Greska", JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(contentPane, e1.getMessage(), "Greska", JOptionPane.ERROR_MESSAGE);
 		}
 	}
 }
