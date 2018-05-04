@@ -15,17 +15,17 @@ public class Menjacnica implements MenjacnicaInterface{
 
 	@Override
 	public void dodajValutu(Valuta valuta) {
-		kursnaLista = SODodajValutu.uradi(kursnaLista, valuta);		
+		SODodajValutu.izvrsi(kursnaLista, valuta);		
 	}
 
 	@Override
 	public void obrisiValutu(Valuta valuta) {
-		kursnaLista = SOObrisiValutu.uradi(kursnaLista, valuta);
+		SOObrisiValutu.izvrsi(kursnaLista, valuta);
 	}
 
 	@Override
 	public double izvrsiTransakciju(Valuta valuta, boolean prodaja, double iznos) {
-		return SOIzvrsiTransakciju.uradi(valuta, prodaja, iznos);
+		return SOIzvrsiTransakciju.izvrsi(valuta, prodaja, iznos);
 	}
 
 	@Override
@@ -35,12 +35,12 @@ public class Menjacnica implements MenjacnicaInterface{
 
 	@Override
 	public void ucitajIzFajla(String putanja) {
-		kursnaLista = SOUcitajIzFajla.uradi(putanja);
+		kursnaLista = SOUcitajIzFajla.izvrsi(putanja);
 	}
 
 	@Override
 	public void sacuvajUFajl(String putanja) {
-		SOSacuvajUFajlu.uradi( kursnaLista, putanja);
+		SOSacuvajUFajlu.izvrsi( kursnaLista, putanja);
 	}
 
 	

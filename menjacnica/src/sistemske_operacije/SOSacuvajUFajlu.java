@@ -8,11 +8,12 @@ import java.util.LinkedList;
 import menjacnica.Valuta;
 
 public class SOSacuvajUFajlu {
-	public static void uradi(LinkedList<Valuta> kursnaLista, String putanja) {
+	public static void izvrsi(LinkedList<Valuta> kursnaLista, String putanja) {
 		try{
 			ObjectOutputStream out = new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream(putanja)));
 			
 			out.writeObject(kursnaLista);
+			out.close();
 		}catch(Exception e){
 			throw new RuntimeException(e);
 		}

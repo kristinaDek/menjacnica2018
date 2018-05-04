@@ -6,7 +6,7 @@ import menjacnica.Valuta;
 
 public class SODodajValutu {
 	
-	public static LinkedList<Valuta> uradi(LinkedList<Valuta> kursnaLista, Valuta valuta) {
+	public static void izvrsi(LinkedList<Valuta> kursnaLista, Valuta valuta) {
 		if (valuta==null)
 			throw new RuntimeException("Valuta ne sme biti null");
 		
@@ -15,6 +15,5 @@ public class SODodajValutu {
 		
 		kursnaLista.add(valuta);	
 		
-		return kursnaLista;
 	}
 }
